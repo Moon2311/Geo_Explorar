@@ -4,31 +4,46 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>GOo ExploRer - Your Trusted Partner for Memorable Pakistan Tours</title>
-  <link rel="stylesheet" href="./style.css">
+  <meta name="description" content="GOo ExploRer — Pakistan's native tours & travel company. Weekly tours to Hunza, Skardu, Swat, Naran Kaghan and Neelum Valley from Lahore & Islamabad.">
+  <meta name="theme-color" content="#0a3a2b">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+  <script>document.documentElement.classList.add('js');</script>
 </head>
 <body>
-  <!-- Top Bar -->
-  <div class="top-bar">
-    <div class="container top-bar-inner">
-      <a href="mailto:info@gooexplorer.com" class="top-link">info@gooexplorer.com</a>
-      <a href="https://wa.me/923065500888" class="top-link" target="_blank" rel="noopener">0306 5500888</a>
-      <a href="#plan-tour" class="btn-top">Plan My Tour</a>
-    </div>
-  </div>
+  <!-- SVG icon sprite -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.5 19.5 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8 9.8a16 16 0 0 0 6 6l1.3-1.3a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></symbol>
+      <symbol id="i-insta" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r=".6" fill="currentColor"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+      <symbol id="i-cal" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="16" rx="2"/><path d="M3 10h18M8 3v4M16 3v4"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-left" viewBox="0 0 24 24"><path d="m15 18-6-6 6-6"/></symbol>
+      <symbol id="i-right" viewBox="0 0 24 24"><path d="m9 18 6-6-6-6"/></symbol>
+      <symbol id="i-quote" viewBox="0 0 24 24"><path d="M7 7h4v4c0 3-1.5 5-4 6M14 7h4v4c0 3-1.5 5-4 6" /></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l1.9 5.6L19.5 10l-5.6 1.9L12 17.5l-1.9-5.6L4.5 10l5.6-1.4z"/><path d="M19 15l.8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8z"/></symbol>
+      <symbol id="i-plane" viewBox="0 0 24 24"><path d="M17.8 19.2 16 11l3.5-3.5C21 6 21.5 4 21 3c-1-.5-3 0-4.5 1.5L13 8 4.8 6.2c-.5-.1-.9.1-1.1.5l-.3.5c-.2.5-.1 1 .3 1.3L9 12l-2 3H4l-1 1 3 2 2 3 1-1v-3l3-2 3.5 5.3c.3.4.8.5 1.3.3l.5-.2c.4-.3.6-.7.5-1.2z"/></symbol>
+      <symbol id="i-tent" viewBox="0 0 24 24"><path d="M3.5 21 12 4l8.5 17M2 21h20M12 4l-2-2M12 4l2-2"/><path d="M12 21l-3-6h6z"/></symbol>
+      <symbol id="i-mountain" viewBox="0 0 24 24"><path d="m8 3 4 8 5-5 5 15H2z"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M19 14c1.5-1.5 3-3.2 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.8 0-3 .5-4.5 2-1.5-1.5-2.7-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4 3 5.5l7 7z"/></symbol>
+      <symbol id="i-road" viewBox="0 0 24 24"><path d="M4 21 8 3M20 21 16 3M12 4v2M12 10v3M12 17v3"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path fill="currentColor" stroke="none" d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5c-.2 0-.4.1-.7.3-.2.3-.9.9-.9 2.2s.9 2.5 1 2.7c.1.2 1.8 2.8 4.4 3.9 1.6.7 2.3.8 3.1.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.3-.3-.4-.5-.5z"/></symbol>
+    </defs>
+  </svg>
 
   <!-- Header -->
-  <header class="header">
+  <header class="header" id="header">
     <div class="container header-inner">
-      <a href="#" class="logo">GOo ExploRer</a>
-      <button class="nav-toggle" aria-label="Toggle menu">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-      <nav class="nav">
+      <a href="#home" class="logo" aria-label="GOo ExploRer home">
+        <span class="logo-mark"><svg><use href="#i-mountain"/></svg></span>
+        <span class="logo-text">GOo <em>ExploRer</em></span>
+      </a>
+      <nav class="nav" id="nav">
         <ul class="nav-list">
           <li><a href="#home">Home</a></li>
           <li><a href="#tours">Tours</a></li>
@@ -37,29 +52,33 @@
           <li><a href="#about">About Us</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <a href="#plan-tour" class="btn btn-accent nav-cta">Plan My Tour</a>
       </nav>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="nav">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
     </div>
   </header>
 
   <!-- Hero -->
   <section id="home" class="hero">
-    <div class="hero-bg"></div>
+    <div class="hero-bg" aria-hidden="true"></div>
     <div class="container hero-content">
-      <p class="hero-tagline">Pakistan's Leading Native Tours & Travel Company</p>
-      <h1 class="hero-title">GOo ExploRer</h1>
-      <p class="hero-subtitle">Make My Adventure</p>
-      <h2 class="hero-heading">EXPERIENCE PAKISTAN</h2>
-      <p class="hero-desc">Outstanding Pakistan experiences</p>
+      <p class="eyebrow eyebrow-light">Pakistan's Leading Native Tours &amp; Travel Company</p>
+      <h1 class="hero-title">Experience <span>Pakistan</span></h1>
+      <p class="hero-desc">Outstanding Pakistan experiences with <strong>GOo ExploRer</strong> — from the peaks of Hunza and Skardu to the valleys of Swat and Neelum. Make My Adventure.</p>
       <div class="hero-actions">
-        <a href="#tours" class="btn btn-primary">Tours</a>
+        <a href="#tours" class="btn btn-accent btn-lg">Explore Tours <svg class="ico"><use href="#i-arrow"/></svg></a>
+        <a href="https://wa.me/923065500888" class="btn btn-glass btn-lg" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whatsapp"/></svg> 0306 5500888</a>
       </div>
-    </div>
-    <!-- Search Box -->
-    <div class="search-box container">
-      <div class="search-form search-tours active">
+
+      <!-- Search Box -->
+      <form class="search-box" id="search-form">
         <div class="search-field">
-          <label>Location</label>
-          <select>
+          <label for="s-location"><svg class="ico"><use href="#i-pin"/></svg> Location</label>
+          <select id="s-location">
             <option>Hunza Valley</option>
             <option>Skardu</option>
             <option>Swat</option>
@@ -71,64 +90,68 @@
           </select>
         </div>
         <div class="search-field">
-          <label>Date</label>
-          <input type="date" placeholder="Add date">
+          <label for="s-in"><svg class="ico"><use href="#i-cal"/></svg> Date</label>
+          <input id="s-in" type="date">
         </div>
         <div class="search-field">
-          <label>Check out</label>
-          <input type="date" placeholder="Add date">
+          <label for="s-out"><svg class="ico"><use href="#i-cal"/></svg> Check out</label>
+          <input id="s-out" type="date">
         </div>
-        <button class="btn btn-search">Search</button>
-      </div>
+        <button type="submit" class="btn btn-primary btn-search">Search</button>
+      </form>
     </div>
+    <a href="#destinations" class="scroll-cue" aria-label="Scroll down"><span></span></a>
   </section>
 
   <!-- Top Destinations -->
   <section id="destinations" class="section destinations">
     <div class="container">
-      <h2 class="section-title">Top Travel Destinations</h2>
-      <p class="section-subtitle">Discover Pakistan's Most Beautiful Destinations</p>
+      <div class="section-head reveal">
+        <p class="eyebrow">Where to go</p>
+        <h2 class="section-title">Top Travel Destinations</h2>
+        <p class="section-subtitle">Discover Pakistan's Most Beautiful Destinations</p>
+      </div>
       <div class="dest-grid">
-        <a href="#" class="dest-card">
-          <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1528164344705-47542687000d?w=600')"></div>
+        <a href="#" class="dest-card dest-card-lg reveal">
+          <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1514558427911-8e293bebf18c?w=1000')"></div>
           <div class="dest-info">
+            <span class="dest-count">19 Tours</span>
             <h3>Hunza Valley</h3>
-            <span>19 Tours</span>
           </div>
         </a>
-        <a href="#" class="dest-card">
-          <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1568667256549-094345857637?w=600')"></div>
+        <a href="#" class="dest-card reveal">
+          <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1603491656337-3b491147917c?w=600')"></div>
           <div class="dest-info">
+            <span class="dest-count">3 Tours</span>
             <h3>Lahore</h3>
-            <span>3 Tours</span>
           </div>
         </a>
-        <a href="#" class="dest-card">
-          <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600')"></div>
+        <a href="#" class="dest-card reveal">
+          <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1679951124125-50cc4029d727?w=600')"></div>
           <div class="dest-info">
+            <span class="dest-count">11 Tours</span>
             <h3>Skardu</h3>
-            <span>11 Tours</span>
           </div>
         </a>
-        <a href="#" class="dest-card">
+        <a href="#" class="dest-card reveal">
           <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600')"></div>
           <div class="dest-info">
+            <span class="dest-count">6 Tours</span>
             <h3>Swat</h3>
-            <span>6 Tours</span>
           </div>
         </a>
-        <a href="#" class="dest-card">
+        <a href="#" class="dest-card reveal">
           <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600')"></div>
           <div class="dest-info">
+            <span class="dest-count">8 Tours</span>
             <h3>Naran Kaghan</h3>
-            <span>8 Tours</span>
           </div>
         </a>
-        <a href="#" class="dest-card">
+        <a href="#" class="dest-card reveal">
           <div class="dest-img" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600')"></div>
           <div class="dest-info">
+            <span class="dest-count">5 Tours</span>
             <h3>Neelum Valley</h3>
-            <span>5 Tours</span>
           </div>
         </a>
       </div>
@@ -138,63 +161,99 @@
   <!-- Popular Tours -->
   <section id="tours" class="section tours-section">
     <div class="container">
-      <h2 class="section-title">Winter Discounted Weekly Tours</h2>
-      <p class="section-subtitle">Departure from Lahore & Islamabad</p>
-      <div class="tours-grid">
+      <div class="section-head section-head-row reveal">
+        <div>
+          <p class="eyebrow">Departure from Lahore &amp; Islamabad</p>
+          <h2 class="section-title">Winter Discounted Weekly Tours</h2>
+        </div>
+        <div class="slider-nav">
+          <button class="slider-btn" data-dir="-1" aria-label="Previous tours"><svg><use href="#i-left"/></svg></button>
+          <button class="slider-btn" data-dir="1" aria-label="Next tours"><svg><use href="#i-right"/></svg></button>
+        </div>
+      </div>
+      <div class="tours-track" id="tours-track">
         <article class="tour-card">
-          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600')"></div>
-          <span class="tour-badge">Fri</span>
+          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1667922210719-566cbfec2b11?w=600')">
+            <span class="tour-badge"><svg class="ico"><use href="#i-cal"/></svg> Fri</span>
+          </div>
           <div class="tour-body">
-            <h3>Hunza & Skardu</h3>
-            <p class="tour-meta">8 Days</p>
+            <h3>Hunza &amp; Skardu</h3>
+            <div class="tour-foot">
+              <span class="tour-meta"><svg class="ico"><use href="#i-clock"/></svg> 8 Days</span>
+              <a href="#plan-tour" class="tour-link" aria-label="Enquire about Hunza & Skardu"><svg><use href="#i-arrow"/></svg></a>
+            </div>
           </div>
         </article>
         <article class="tour-card">
-          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600')"></div>
-          <span class="tour-badge">Mon/Fri</span>
+          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1602147557719-1d65f9e58a24?w=600')">
+            <span class="tour-badge"><svg class="ico"><use href="#i-cal"/></svg> Mon/Fri</span>
+          </div>
           <div class="tour-body">
-            <h3>Skardu & Basho</h3>
-            <p class="tour-meta">6 Days</p>
+            <h3>Skardu &amp; Basho</h3>
+            <div class="tour-foot">
+              <span class="tour-meta"><svg class="ico"><use href="#i-clock"/></svg> 6 Days</span>
+              <a href="#plan-tour" class="tour-link" aria-label="Enquire about Skardu & Basho"><svg><use href="#i-arrow"/></svg></a>
+            </div>
           </div>
         </article>
         <article class="tour-card">
-          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1528164344705-47542687000d?w=600')"></div>
-          <span class="tour-badge">Tue/Fri</span>
+          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1632133915653-8ded5c72e329?w=600')">
+            <span class="tour-badge"><svg class="ico"><use href="#i-cal"/></svg> Tue/Fri</span>
+          </div>
           <div class="tour-body">
             <h3>Hunza Valley</h3>
-            <p class="tour-meta">5 Days</p>
+            <div class="tour-foot">
+              <span class="tour-meta"><svg class="ico"><use href="#i-clock"/></svg> 5 Days</span>
+              <a href="#plan-tour" class="tour-link" aria-label="Enquire about Hunza Valley"><svg><use href="#i-arrow"/></svg></a>
+            </div>
           </div>
         </article>
         <article class="tour-card">
-          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600')"></div>
-          <span class="tour-badge">Thu</span>
+          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600')">
+            <span class="tour-badge"><svg class="ico"><use href="#i-cal"/></svg> Thu</span>
+          </div>
           <div class="tour-body">
             <h3>Kashmir Neelum Valley</h3>
-            <p class="tour-meta">3 Days</p>
+            <div class="tour-foot">
+              <span class="tour-meta"><svg class="ico"><use href="#i-clock"/></svg> 3 Days</span>
+              <a href="#plan-tour" class="tour-link" aria-label="Enquire about Kashmir Neelum Valley"><svg><use href="#i-arrow"/></svg></a>
+            </div>
           </div>
         </article>
         <article class="tour-card">
-          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600')"></div>
-          <span class="tour-badge">Thu</span>
+          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=600')">
+            <span class="tour-badge"><svg class="ico"><use href="#i-cal"/></svg> Thu</span>
+          </div>
           <div class="tour-body">
             <h3>Swat Kalam Valley</h3>
-            <p class="tour-meta">3 Days</p>
+            <div class="tour-foot">
+              <span class="tour-meta"><svg class="ico"><use href="#i-clock"/></svg> 3 Days</span>
+              <a href="#plan-tour" class="tour-link" aria-label="Enquire about Swat Kalam Valley"><svg><use href="#i-arrow"/></svg></a>
+            </div>
           </div>
         </article>
         <article class="tour-card">
-          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600')"></div>
-          <span class="tour-badge">Fri</span>
+          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?w=600')">
+            <span class="tour-badge"><svg class="ico"><use href="#i-cal"/></svg> Fri</span>
+          </div>
           <div class="tour-body">
             <h3>Sharan / Shogran</h3>
-            <p class="tour-meta">2 Days</p>
+            <div class="tour-foot">
+              <span class="tour-meta"><svg class="ico"><use href="#i-clock"/></svg> 2 Days</span>
+              <a href="#plan-tour" class="tour-link" aria-label="Enquire about Sharan / Shogran"><svg><use href="#i-arrow"/></svg></a>
+            </div>
           </div>
         </article>
         <article class="tour-card">
-          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600')"></div>
-          <span class="tour-badge">Sat</span>
+          <div class="tour-img" style="background-image: url('https://images.unsplash.com/photo-1519681393784-d120267933ba?w=600')">
+            <span class="tour-badge"><svg class="ico"><use href="#i-cal"/></svg> Sat</span>
+          </div>
           <div class="tour-body">
             <h3>Mushkpuri Top</h3>
-            <p class="tour-meta">1 Day</p>
+            <div class="tour-foot">
+              <span class="tour-meta"><svg class="ico"><use href="#i-clock"/></svg> 1 Day</span>
+              <a href="#plan-tour" class="tour-link" aria-label="Enquire about Mushkpuri Top"><svg><use href="#i-arrow"/></svg></a>
+            </div>
           </div>
         </article>
       </div>
@@ -204,61 +263,65 @@
   <!-- How it works -->
   <section class="section how-it-works">
     <div class="container">
-      <h2 class="section-title">Amazing Holiday Prices</h2>
-      <p class="section-subtitle">in 3 Simple Steps</p>
-      <div class="steps-grid">
-        <div class="step-card">
-          <span class="step-num">1</span>
+      <div class="section-head reveal">
+        <p class="eyebrow eyebrow-light">in 3 Simple Steps</p>
+        <h2 class="section-title">Amazing Holiday Prices</h2>
+      </div>
+      <ol class="steps-grid">
+        <li class="step-card reveal">
+          <span class="step-num">01</span>
           <h3>Select your Destination</h3>
-          <p>& tell us your preference</p>
-        </div>
-        <div class="step-card">
-          <span class="step-num">2</span>
+          <p>&amp; tell us your preference</p>
+        </li>
+        <li class="step-card reveal">
+          <span class="step-num">02</span>
           <h3>Get multiple free quotes</h3>
           <p>from verified travel experts</p>
-        </div>
-        <div class="step-card">
-          <span class="step-num">3</span>
-          <h3>Customize & book</h3>
+        </li>
+        <li class="step-card reveal">
+          <span class="step-num">03</span>
+          <h3>Customize &amp; book</h3>
           <p>a perfect holiday experience</p>
-        </div>
-      </div>
+        </li>
+      </ol>
     </div>
   </section>
 
   <!-- Types of Tours -->
   <section class="section tour-types">
     <div class="container">
-      <h2 class="section-title">Types of Tours</h2>
-      <p class="section-subtitle">Choose your travel style</p>
+      <div class="section-head reveal">
+        <p class="eyebrow">Choose your travel style</p>
+        <h2 class="section-title">Types of Tours</h2>
+      </div>
       <div class="types-grid">
-        <a href="#" class="type-card">
-          <div class="type-icon">✨</div>
+        <a href="#" class="type-card reveal">
+          <div class="type-icon"><svg><use href="#i-sparkle"/></svg></div>
           <h3>Luxury Tours</h3>
           <p>The Best of the Best</p>
         </a>
-        <a href="#" class="type-card">
-          <div class="type-icon">✈️</div>
+        <a href="#" class="type-card reveal">
+          <div class="type-icon"><svg><use href="#i-plane"/></svg></div>
           <h3>Air Travel</h3>
           <p>Travel By Air</p>
         </a>
-        <a href="#" class="type-card">
-          <div class="type-icon">⛺</div>
+        <a href="#" class="type-card reveal">
+          <div class="type-icon"><svg><use href="#i-tent"/></svg></div>
           <h3>Camping</h3>
           <p>Starry Night</p>
         </a>
-        <a href="#" class="type-card">
-          <div class="type-icon">🥾</div>
+        <a href="#" class="type-card reveal">
+          <div class="type-icon"><svg><use href="#i-mountain"/></svg></div>
           <h3>Hiking Tours</h3>
           <p>Mountains Of Pakistan</p>
         </a>
-        <a href="#" class="type-card">
-          <div class="type-icon">❤️</div>
+        <a href="#" class="type-card reveal">
+          <div class="type-icon"><svg><use href="#i-heart"/></svg></div>
           <h3>Honeymoon Tours</h3>
           <p>Spread Love</p>
         </a>
-        <a href="#" class="type-card">
-          <div class="type-icon">🛣️</div>
+        <a href="#" class="type-card reveal">
+          <div class="type-icon"><svg><use href="#i-road"/></svg></div>
           <h3>Road Trip</h3>
           <p>Travel By Road</p>
         </a>
@@ -269,21 +332,24 @@
   <!-- Picture Section / Gallery -->
   <section id="gallery" class="section gallery-section">
     <div class="container">
-      <h2 class="section-title">GOo ExploRer in Action</h2>
-      <p class="section-subtitle">Beauty, Charm and Adventure — Your Travel Partner</p>
+      <div class="section-head reveal">
+        <p class="eyebrow">Your Travel Partner</p>
+        <h2 class="section-title">GOo ExploRer in Action</h2>
+        <p class="section-subtitle">Beauty, Charm and Adventure</p>
+      </div>
       <div class="gallery-grid">
-        <div class="gallery-item">
-          <img src="./assets/group1.png" alt="GOo ExploRer group at scenic viewpoint">
-        </div>
-        <div class="gallery-item">
-          <img src="./assets/group2.png" alt="GOo ExploRer Your Travel Partner">
-        </div>
-        <div class="gallery-item">
-          <img src="./assets/group3.png" alt="GOo ExploRer tour group in mountains">
-        </div>
-        <div class="gallery-item">
-          <img src="./assets/group4.png" alt="GOo ExploRer group at market">
-        </div>
+        <button class="gallery-item g-tall reveal" type="button">
+          <img src="./assets/group3.png" alt="GOo ExploRer tour group in mountains" loading="lazy">
+        </button>
+        <button class="gallery-item g-wide reveal" type="button">
+          <img src="./assets/group1.png" alt="GOo ExploRer group at scenic viewpoint" loading="lazy">
+        </button>
+        <button class="gallery-item reveal" type="button">
+          <img src="./assets/group2.png" alt="GOo ExploRer Your Travel Partner" loading="lazy">
+        </button>
+        <button class="gallery-item reveal" type="button">
+          <img src="./assets/group4.png" alt="GOo ExploRer group at market" loading="lazy">
+        </button>
       </div>
     </div>
   </section>
@@ -291,41 +357,87 @@
   <!-- Testimonials -->
   <section class="section testimonials">
     <div class="container">
-      <h2 class="section-title">What Our Clients Say</h2>
-      <p class="section-subtitle">Real Experiences, Genuine Reviews!</p>
-      <div class="testimonials-slider">
-        <div class="testimonial-card">
-          <p>"Amazing services, co-operative people. Highly recommend GOo ExploRer for Pakistan tours."</p>
-          <strong>— Happy Traveler</strong>
-        </div>
-        <div class="testimonial-card">
-          <p>"Everything made easy, all was laid out and planned according to our custom liking. Shajjad Ali Shigri and the team were excellent."</p>
-          <strong>— Satisfied Customer</strong>
-        </div>
-        <div class="testimonial-card">
-          <p>"Good guide, amazing places & overall fun experience. Would recommend GOo ExploRer to everyone."</p>
-          <strong>— Adventure Seeker</strong>
-        </div>
+      <div class="section-head reveal">
+        <p class="eyebrow">Real Experiences, Genuine Reviews!</p>
+        <h2 class="section-title">What Our Clients Say</h2>
+      </div>
+      <div class="testimonials-grid">
+        <figure class="testimonial-card reveal">
+          <svg class="quote-ico"><use href="#i-quote"/></svg>
+          <blockquote>Amazing services, co-operative people. Highly recommend GOo ExploRer for Pakistan tours.</blockquote>
+          <figcaption><span class="avatar">H</span> Happy Traveler</figcaption>
+        </figure>
+        <figure class="testimonial-card reveal">
+          <svg class="quote-ico"><use href="#i-quote"/></svg>
+          <blockquote>Everything made easy, all was laid out and planned according to our custom liking. Shajjad Ali Shigri and the team were excellent.</blockquote>
+          <figcaption><span class="avatar">S</span> Satisfied Customer</figcaption>
+        </figure>
+        <figure class="testimonial-card reveal">
+          <svg class="quote-ico"><use href="#i-quote"/></svg>
+          <blockquote>Good guide, amazing places &amp; overall fun experience. Would recommend GOo ExploRer to everyone.</blockquote>
+          <figcaption><span class="avatar">A</span> Adventure Seeker</figcaption>
+        </figure>
       </div>
     </div>
   </section>
 
   <!-- About & Contact -->
   <section id="about" class="section about-contact">
-    <div class="container">
-      <div id="contact" class="about-content about-content-single">
+    <div class="container about-grid">
+      <div class="about-media reveal">
+        <img src="./assets/group2.png" alt="GOo ExploRer travel group" loading="lazy">
+        <div class="about-badge">
+          <strong>GOo ExploRer</strong>
+          <span>Make My Adventure</span>
+        </div>
+      </div>
+      <div id="contact" class="about-content reveal">
+        <p class="eyebrow">About us</p>
         <h2 class="section-title">About GOo ExploRer</h2>
-        <p>Your trusted partner for memorable Pakistan tours. We craft custom itineraries and seamless travel experiences across Pakistan's most stunning destinations.</p>
-        <p><strong>GOo ExploRer</strong></p>
-        <p><strong>Adviser:</strong> Shajjad Ali Shigri</p>
-        <p><a href="https://wa.me/923065500888" class="contact-link" target="_blank" rel="noopener">0306 5500888</a></p>
-        <p><a href="mailto:info@gooexplorer.com" class="contact-link">info@gooexplorer.com</a></p>
-        <p class="contact-social">
-          <a href="https://www.instagram.com/go_o_explorer?igsh=MWFwazNjZWxkcmJhMw==" class="contact-link" target="_blank" rel="noopener">Instagram: GOo ExploRer</a>
-          <span> · </span>
-          <a href="https://www.instagram.com/its_our_gb?igsh=ajF5bWJ3eXJiODAx" class="contact-link" target="_blank" rel="noopener">Its Our GB</a>
-        </p>
-        <a href="#plan-tour" class="btn btn-primary">Plan My Tour</a>
+        <p class="lead">Your trusted partner for memorable Pakistan tours. We craft custom itineraries and seamless travel experiences across Pakistan's most stunning destinations.</p>
+        <p class="adviser"><strong>Adviser:</strong> Shajjad Ali Shigri</p>
+        <ul class="contact-list">
+          <li>
+            <a href="https://wa.me/923065500888" target="_blank" rel="noopener">
+              <span class="contact-ico"><svg><use href="#i-whatsapp"/></svg></span>
+              <span><small>WhatsApp / Call</small>0306 5500888</span>
+            </a>
+          </li>
+          <li>
+            <a href="mailto:info@gooexplorer.com">
+              <span class="contact-ico"><svg><use href="#i-mail"/></svg></span>
+              <span><small>Email</small>info@gooexplorer.com</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/go_o_explorer?igsh=MWFwazNjZWxkcmJhMw==" target="_blank" rel="noopener">
+              <span class="contact-ico"><svg><use href="#i-insta"/></svg></span>
+              <span><small>Instagram</small>GOo ExploRer</span>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/its_our_gb?igsh=ajF5bWJ3eXJiODAx" target="_blank" rel="noopener">
+              <span class="contact-ico"><svg><use href="#i-insta"/></svg></span>
+              <span><small>Instagram</small>Its Our GB</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plan my tour CTA -->
+  <section id="plan-tour" class="cta">
+    <div class="container">
+      <div class="cta-card reveal">
+        <div>
+          <h2>Ready for your next adventure?</h2>
+          <p>Tell us where you want to go — we'll plan the rest.</p>
+        </div>
+        <div class="cta-actions">
+          <a href="https://wa.me/923065500888" class="btn btn-accent btn-lg" target="_blank" rel="noopener"><svg class="ico"><use href="#i-whatsapp"/></svg> Plan My Tour</a>
+          <a href="mailto:info@gooexplorer.com" class="btn btn-glass btn-lg"><svg class="ico"><use href="#i-mail"/></svg> Email Us</a>
+        </div>
       </div>
     </div>
   </section>
@@ -334,6 +446,18 @@
   <footer class="footer">
     <div class="container">
       <div class="footer-grid">
+        <div class="footer-col footer-brand">
+          <a href="#home" class="logo logo-light">
+            <span class="logo-mark"><svg><use href="#i-mountain"/></svg></span>
+            <span class="logo-text">GOo <em>ExploRer</em></span>
+          </a>
+          <p>Your trusted partner for memorable Pakistan tours.</p>
+          <div class="socials">
+            <a href="https://wa.me/923065500888" target="_blank" rel="noopener" aria-label="WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+            <a href="https://www.instagram.com/go_o_explorer?igsh=MWFwazNjZWxkcmJhMw==" target="_blank" rel="noopener" aria-label="Instagram: GOo ExploRer"><svg><use href="#i-insta"/></svg></a>
+            <a href="mailto:info@gooexplorer.com" aria-label="Email"><svg><use href="#i-mail"/></svg></a>
+          </div>
+        </div>
         <div class="footer-col">
           <h4>Quick Links</h4>
           <ul>
@@ -366,19 +490,28 @@
         </div>
         <div class="footer-col footer-contact">
           <h4>Contact</h4>
-          <p><a href="https://wa.me/923065500888" target="_blank" rel="noopener" style="color: inherit;">0306 5500888</a></p>
-          <p>info@gooexplorer.com</p>
-          <p><a href="https://www.instagram.com/go_o_explorer?igsh=MWFwazNjZWxkcmJhMw==" target="_blank" rel="noopener" style="color: inherit;">Instagram: GOo ExploRer</a></p>
-          <p><a href="https://www.instagram.com/its_our_gb?igsh=ajF5bWJ3eXJiODAx" target="_blank" rel="noopener" style="color: inherit;">Instagram: Its Our GB</a></p>
-          <p><strong>GOo ExploRer</strong></p>
+          <p><a href="https://wa.me/923065500888" target="_blank" rel="noopener">0306 5500888</a></p>
+          <p><a href="mailto:info@gooexplorer.com">info@gooexplorer.com</a></p>
+          <p><a href="https://www.instagram.com/go_o_explorer?igsh=MWFwazNjZWxkcmJhMw==" target="_blank" rel="noopener">Instagram: GOo ExploRer</a></p>
+          <p><a href="https://www.instagram.com/its_our_gb?igsh=ajF5bWJ3eXJiODAx" target="_blank" rel="noopener">Instagram: Its Our GB</a></p>
           <p>Adviser: Shajjad Ali Shigri</p>
         </div>
       </div>
       <div class="footer-bottom">
         <p>© Copyright GOo ExploRer 2025 · Adviser: Shajjad Ali Shigri</p>
+        <a href="#home" class="to-top">Back to top ↑</a>
       </div>
     </div>
   </footer>
+
+  <!-- Floating WhatsApp -->
+  <a href="https://wa.me/923065500888" class="wa-float" target="_blank" rel="noopener" aria-label="Chat on WhatsApp"><svg><use href="#i-whatsapp"/></svg></a>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" hidden>
+    <button class="lightbox-close" aria-label="Close">×</button>
+    <img src="" alt="">
+  </div>
 
   <script src="./script.js"></script>
 </body>
